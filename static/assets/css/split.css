@@ -414,4 +414,5 @@ video.video {
 hr {
   margin-bottom: 32px;
   margin-top: -12px;
+  animation: fadein 2s;
 }
