@@ -313,6 +313,182 @@ body.page-template-page-fullsingle-split {
 }
 
 //-------------------------------------------------------------------------------
+// form
+//-------------------------------------------------------------------------------
+
+.split-form {
+  padding: 40px 0 20px 0;
+  font-family: 'Lora', serif;
+
+  @media (max-width: $bp-smallish ) {
+    padding: 30px 0 10px 0;
+  }
+
+  @media (max-width: $bp-tablet ) {
+    padding: 20px 0 0 0;
+  }
+
+  input {
+    width: 100%;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    background-color: transparent;
+    border: none;
+    display: block;
+    height: 24px;
+    min-height: 24px;
+    line-height: 24px;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    resize: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    z-index: 0;
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+
+  p {
+    color: $color-text;
+    margin-bottom: 20px;
+    line-height: inherit;
+  }
+
+  a {
+    color: $color-link;
+    transition-duration: 0.5s;
+    border-bottom: 1px dotted $color-link;
+
+    &:hover {
+      color: $color-link-hover;
+      transition-duration: 0.1s;
+      border-bottom: 1px dotted $color-link-hover;
+    }
+
+  }
+
+  em,
+  i {
+    font-style: italic;
+    line-height: inherit;
+  }
+
+  strong,
+  b {
+    font-weight: bold;
+    line-height: inherit;
+  }
+
+  small {
+    font-size: 80%;
+    line-height: inherit;
+  }
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    font-style: normal;
+    font-weight: normal;
+    color: inherit;
+  }
+
+  h1 small, .h1 small,
+  h2 small, .h2 small,
+  h3 small, .h3 small,
+  h4 small, .h4 small,
+  h5 small, .h5 small,
+  h6 small, .h6 small {
+    line-height: 0;
+  }
+
+  h1, .h1 {
+    font-size: 1.5em;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  h2, .h2 {
+    font-size: 1.25em;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  h3, .h3 {
+    font-size: 1.1875em;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  h4, .h4 {
+    font-size: 1.125em;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  h5, .h5 {
+    font-size: 1.0625em;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  h6, .h6 {
+    font-size: 1em;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  ul,
+  ol,
+  dl {
+    margin-bottom: 20px;
+    list-style-position: outside;
+    line-height: inherit;
+  }
+
+  li {
+    font-size: inherit;
+  }
+
+  ul {
+    margin-left: 2.25em;
+    list-style-type: disc;
+  }
+
+  ol {
+    margin-left: 2.25em;
+    list-style-type: decimal;
+  }
+
+  ul ul, ol ul, ul ol, ol ol {
+    margin-left: 1.25em;
+    margin-bottom: 0;
+  }
+
+  dl dt {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  dl dd {
+    margin-bottom: 10px;
+  }
+}
+
+//-------------------------------------------------------------------------------
 // Lists
 //-------------------------------------------------------------------------------
 

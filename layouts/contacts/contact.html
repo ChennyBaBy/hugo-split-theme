@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ default .Site.LanguageCode "en-US" }}">
+
+<head>
+  {{ partial "head" . }}
+</head>
+
+<body id="fullsingle" class="page-template-page-fullsingle-split">
+
+  <div class="fs-split">
+
+    <!-- Image -->
+    {{ if .Site.Params.visual.image.enable }}
+
+      <div class="split-image">
+
+      </div>
+
+    <!-- Video -->
+    {{ else if .Site.Params.visual.video.enable }}
+
+      {{ partial "video" . }}
+
+    {{ end }}
+
+    <!-- Content Side -->
+    <div class="split-content">
+      <div class="split-content-vertically-center">
+
+        <form class="split-form" name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: </label>
+            <br/>
+            <input type="text" name="name" />
+          </p>
+          <p>
+            <label>Your Email: </label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label>Message: </label>
+            <textarea name="message"></textarea>
+          </p>
+          <p>
+            <button class="btn draw-border" type="submit">MAKE IT HAPPEN</button>
+          </p>
+        </form>
+
+        <!-- Footer -->
+        {{ partial "footer" . }}
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

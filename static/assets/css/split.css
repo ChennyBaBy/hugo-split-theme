@@ -416,3 +416,225 @@ hr {
   margin-top: -12px;
   animation: fadein 2s;
 }
+
+
+.split-form {
+  padding: 40px 0 20px 0;
+  font-family: "Lora", serif;
+}
+@media (max-width: 1200px) {
+  .split-form {
+    padding: 30px 0 10px 0;
+  }
+}
+@media (max-width: 800px) {
+  .split-form {
+    padding: 20px 0 0 0;
+  }
+}
+.split-form p {
+  color: #848d96;
+  margin-bottom: 20px;
+  line-height: inherit;
+}
+.split-form a {
+  color: #848d96;
+  transition-duration: 0.5s;
+  border-bottom: 1px dotted #848d96;
+}
+.split-form a:hover {
+  color: #CA486d;
+  transition-duration: 0.1s;
+  border-bottom: 1px dotted #CA486d;
+}
+.split-form em,
+.split-form i {
+  font-style: italic;
+  line-height: inherit;
+}
+.split-form strong,
+.split-form b {
+  font-weight: bold;
+  line-height: inherit;
+}
+.split-form small {
+  font-size: 80%;
+  line-height: inherit;
+}
+.split-form h1, .split-form .h1,
+.split-form h2, .split-form .h2,
+.split-form h3, .split-form .h3,
+.split-form h4, .split-form .h4,
+.split-form h5, .split-form .h5,
+.split-form h6, .split-form .h6 {
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+}
+.split-form h1 small, .split-form .h1 small,
+.split-form h2 small, .split-form .h2 small,
+.split-form h3 small, .split-form .h3 small,
+.split-form h4 small, .split-form .h4 small,
+.split-form h5 small, .split-form .h5 small,
+.split-form h6 small, .split-form .h6 small {
+  line-height: 0;
+}
+.split-form h1, .split-form .h1 {
+  font-size: 1.5em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-form h2, .split-form .h2 {
+  font-size: 1.25em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-form h3, .split-form .h3 {
+  font-size: 1.1875em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-form h4, .split-form .h4 {
+  font-size: 1.125em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-form h5, .split-form .h5 {
+  font-size: 1.0625em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-form h6, .split-form .h6 {
+  font-size: 1em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-form ul,
+.split-form ol,
+.split-form dl {
+  margin-bottom: 20px;
+  list-style-position: outside;
+  line-height: inherit;
+}
+.split-form li {
+  font-size: inherit;
+}
+.split-form ul {
+  margin-left: 2.25em;
+  list-style-type: disc;
+}
+.split-form ol {
+  margin-left: 2.25em;
+  list-style-type: decimal;
+}
+.split-form ul ul, .split-form ol ul, .split-form ul ol, .split-form ol ol {
+  margin-left: 1.25em;
+  margin-bottom: 0;
+}
+.split-form dl dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.split-form dl dd {
+  margin-bottom: 10px;
+}
+
+.split-form input,
+.split-form textarea {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 33px;
+  letter-spacing: -0.2px;
+  color: #848d96;
+  animation: fadein 2s;
+  width: 100%;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  color: #848d96;
+  padding: .5em;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  background-color: #0000007a;
+  border: none;
+  display: block;
+  height: 24px;
+  min-height: 24px;
+  line-height: 24px;
+  margin: 0;
+  outline: none;
+  resize: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  z-index: 0;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.split-form textarea {
+  height: 200px;
+  font-size: 14px;
+}
+
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffe593;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Montserrat", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
